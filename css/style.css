@@ -223,7 +223,7 @@ menu li a:hover {
 }
 
 #nav-menu menu {
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
   float: none;
 }
@@ -272,6 +272,10 @@ menu li a:hover {
   font: 1em sans-serif;
   font-weight: bold;
   margin-bottom: 1.875em;
+}
+
+#products>div.clr {
+  display: none;
 }
 
 #news {
@@ -328,19 +332,22 @@ menu li a:hover {
 }
 
 #menu-bottom menu li {
-  border: none;
+  border-right: 1px solid #000;
 }
 
 #menu-bottom menu li a {
   color: #000;
-  display: block;
   margin: 1.5em 0;
   padding: 0.1em 20px;
-  border-right: 1px solid #000;
 }
 
 #menu-bottom menu li:last-child a {
   border: none;
+}
+
+#menu-bottom {
+    margin-top: 1.2em;
+    padding: 0.6em 0;
 }
 
 #menu-bottom #nav-menu {
@@ -481,6 +488,10 @@ footer {
   background: #fafafa;
 }
 
+footer>.layout>div.clr {
+  display: none;
+}
+
 
 /*  -------------   Adaptive -----------  */
 
@@ -503,26 +514,58 @@ footer {
   }
 
   #lang {
+    width: auto;
     text-align: center;
   }
 
   #lang img {
     margin: 0 auto;
-    float: none;
+    float: left;
+  }
+
+  #header-menu menu li a.faq {
+    border: none;
+  }
+
+  .faq {
+    display: none;
+  }
+
+  #header-menu menu>li:nth-child(4) {
+    border: none;
   }
 
   #header .lang-text {
-    float: none;
+    float: left;
+    padding: 0.65em 0 0.65em 0.65em;
   }
 
   #header menu {
-    width: 80%;
-    border-right: none;
+    width: 58%;
+  }
+
+  #header-menu menu li a {
+    font-size: 0.75em;
+    padding: 0.45em 0.5em;
   }
 
   #search {
-    width: 30%;
-    margin: 0.5em 0 0 1.5%;
+    width: 15%;
+    margin-left: 0.85%;
+  }
+
+  #search input[type="text"] {
+    width: 70%;
+    float: left;
+  }
+
+  #search input[type="submit"] {
+    float: left;
+    margin: 0;
+  }
+
+  #search form {
+    margin-top: 0.4em;
   }
 
   #contacts {
@@ -549,19 +592,47 @@ footer {
   }
 
   #slider {
-    margin-left: 3%;
+    display: none;
   }
 
   #search form {
     border-right: none
   }
 
-  #nav-menu menu {
+  #nav-menu menu, #menu-bottom menu {
     width: 100%;
+    text-align: center;
   }
 
   #nav-menu menu li {
     margin-bottom: 0.5em;
+    float: none;
+    display: inline;
+    line-height: 1.6;
+  }
+
+  #middle>.layout>.layout {
+    width: 690px;
+  }
+
+  #middle .logo {
+    width: 65%;
+    margin: 0 auto 1em 0;
+    float: left;
+    background-position: left;
+  }
+
+  #nav-menu menu li a {
+    padding: 0.75em 2.4em;
+  }
+
+  #contacts {
+    display: none;
+  }
+
+  #order {
+    width: 30%;
+    float: left;
   }
 
   .news-item-data {
@@ -569,11 +640,11 @@ footer {
   }
 
   #menu-bottom {
-    margin-top: 1.2em;
+    margin-top: 3.5em;
   }
 
   #menu-bottom #nav-menu {
-    width: 80%;
+    width: 100%;
   }
 
   #footer-phone-list, #footer-email-list {
@@ -605,6 +676,89 @@ footer {
 
   #menu-bottom menu li {
     margin-bottom: 0;
+  }
+
+  #content .layout {
+    width: 690px;
+  }
+
+  #products {
+    float: none;
+    width: 100%;
+  }
+
+  .box5 {
+    width: 13.04%;
+    text-align: center;
+    margin-right: 6.95%;
+  }
+
+  #products .box5:nth-child(6n) {
+    margin-right: 0;
+  }
+
+  #products>div.clr {
+    display: block;
+  }
+
+  #news {
+    width: 100%;
+    float: none;
+  }
+
+  .news-item img {
+    left: -5.6%;
+  }
+
+  #news div.news-item {
+    margin: 0 0 2em 0;
+  }
+
+  footer>.layout {
+    width: 690px;
+  }
+
+  footer .layout .logo {
+    margin-left: 2.89%;
+    width: 12.46%;
+  }
+
+  footer>.layout>div.clr {
+    display: block;
+  }
+
+  #footer-contacts {
+    width: 75%;
+    border: none;
+    margin-left: 5.79%;
+  }
+
+  #footer-phone-list, #footer-email-list {
+    width: 40%;
+    overflow: hidden;
+    float: left;
+  }
+
+  #footer-social, #subscribe {
+    width: 100%;
+    margin-left: 23%;
+    margin-top: 2.18em;
+  }
+
+  #footer-social>div:first-child {
+    float: left;
+    width: 35%;
+  }
+
+  #footer-share {
+    margin-top: 0;
+    float: left;
+    width: 35%;
+  }
+
+  #subscribe {
+    width: 34.78%;
+    margin-bottom: 1.5em;
   }
 }
 
@@ -686,9 +840,7 @@ footer {
 
   #products h2,
   #news h2,
-  #footer-contacts h4,
-  #footer-social h4,
-  #subscribe h4 {
+  #footer-contacts h4, #subscribe h4 {
     text-align: center;
   }
 
@@ -738,14 +890,5 @@ footer {
     width: 100%;
     padding: 0.5em 0 0.5em 0;
     margin: 1.5em 0;
-  }
-
-  .share {
-    width: 70%;
-    margin: 0 auto;
-  }
-
-  #news .news-item>img {
-    display: none;
   }
 }

@@ -32,7 +32,7 @@
             <li><a href="#">Оценка качества</a></li>
             <li><a href="#">Новости</a></li>
             <li><a href="#">Вакансии</a></li>
-            <li><a href="#">FAQ</a></li>
+            <li class="faq"><a href="#">FAQ</a></li>
           </menu>
         </div>
 
@@ -135,6 +135,8 @@
           <img src="images/poster.png"/>
           <p>Плакат</p>
         </div>
+
+        <div class="clr"></div>
       </div>
 
       <div id="news">
@@ -213,6 +215,8 @@
           </div>
         </div>
       </div>
+
+      <div class="clr"></div>
 
       <div id="footer-social">
         <div>
