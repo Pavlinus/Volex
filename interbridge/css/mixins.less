@@ -1,0 +1,6 @@
+.bg_image(@path, @pos: center, @repeat: no-repeat) {
+  @img: "../images/";
+  background-image: url("@{img}@{path}");
+  background-repeat: @repeat;
+  background-position: @pos;
+}

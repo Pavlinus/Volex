@@ -1,0 +1,236 @@
+@import "mixins.less";
+
+* {
+  margin:0;
+  padding:0;
+}
+
+aside, footer, address, section {
+  display:block;
+}
+
+img, iframe, video, embed {
+  max-width:100%!important;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+
+.table_row {
+  .col_1 {
+    display: table-cell;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .col_2 {
+    display: table-cell;
+    width: 50%;
+    max-width: calc(50%);
+  }
+
+  .col_3 {
+    display: table-cell;
+    width: 33.333333333%;
+    max-width: calc(33%);
+  }
+
+  .col_4 {
+    display: table-cell;
+    width: 25%;
+    max-width: calc(25%);
+  }
+}
+
+
+/* =============== COLORS =============== */
+
+
+/* =============== COLORS =============== */
+
+
+
+/* =============== FONTS =============== */
+
+
+/* =============== FONTS =============== */
+
+
+
+/* =============== MAIN CONTENT =============== */
+
+.container {
+  width: 100%;
+  max-width: 970px;
+  margin: 0 auto;
+}
+
+.logo {
+  max-height: 100%;
+  max-width: 196px;
+  display: inline-block;
+  background-color: #BDBDBD;
+  color: #fff;
+  text-align: center;
+  border: 1px solid #000;
+}
+
+.top_image {
+  max-height: 100%;
+  max-width: 770px;
+  display: inline-block;
+  background-color: #BDBDBD;
+  color: #fff;
+  text-align: center;
+  border: 1px solid #000;
+}
+
+header {
+  width: 100%;
+
+  nav {
+    text-align: center;
+
+    ul {
+
+      li {
+        display: inline-block;
+
+        a {
+          color: #BDBDBD;
+        }
+      }
+    }
+  }
+}
+
+.main {
+
+  .left_panel, .right_panel {
+    display: inline-block;
+    width: 250px;
+    border: 1px solid #000;
+  }
+
+  .content {
+    display: inline-block;
+    width: 46%;
+    border: 1px solid #000;
+  }
+
+  .container {
+    white-space: nowrap;
+  }
+}
+
+
+footer {
+
+}
+
+
+/* =============== MAIN CONTENT =============== */
+
+
+
+
+/* =============== ADAPTIVE =============== */
+
+/*    ------  1280px   -----  */
+
+@media screen and (max-width:1280px), only screen and (max-device-width:1280px) {
+  .layout {
+    width:100%;
+  }
+
+}
+
+/*    ---- 1024px   ---- */
+
+@media screen and (max-width:1024px), only screen and (max-device-width:1024px) {
+  .layout {
+    width: 980px;
+  }
+
+}
+
+/*    ----- 854px   --------- */
+
+@media screen and (max-width:854px), only screen and (max-device-width:854px) {
+  .layout {
+    width: 810px;
+  }
+
+
+}
+
+/*    ----- 800px   --------- */
+
+@media screen and (max-width:800px), only screen and (max-device-width:800px) {
+  .layout {
+    width: 760px;
+  }
+
+}
+
+/*    ----- 768px   --------- */
+
+@media screen and (max-width:768px), only screen and (max-device-width:768px) {
+  .layout {
+    width: 720px;
+  }
+
+}
+
+/*    ----- 640px   --------- */
+
+@media screen and (max-width:640px), only screen and (max-device-width:640px) {
+  .layout {
+    width: 600px;
+  }
+
+
+}
+
+/*    ----- 600px   --------- */
+
+@media screen and (max-width:600px), only screen and (max-device-width:600px) {
+  .layout {
+    width: 560px;
+  }
+
+}
+
+/*    ----- 480px   --------- */
+
+@media screen and (max-width:480px), only screen and (max-device-width:480px) {
+  .layout {
+    width: 440px;
+  }
+
+}
+
+
+/*    ----- 360px   --------- */
+
+@media screen and (max-width:360px), only screen and (max-device-width:360px) {
+  .layout {
+    width: 320px;
+  }
+
+}
+
+/*    ----- 320px   --------- */
+
+@media screen and (max-width:320px), only screen and (max-device-width:320px) {
+  .layout {
+    width: 280px;
+  }
+
+}
